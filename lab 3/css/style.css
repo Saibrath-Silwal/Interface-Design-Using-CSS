@@ -62,7 +62,7 @@ main{
     display: flex;
 }
 
-aside{
+.ok{
     /* display: flex; */
     background-color: grey;
     border: 2px solid black;
@@ -74,20 +74,20 @@ aside{
     margin: 20px;
 }
 
-aside img{
+.ok img{
     width: 100px;
     padding: 10px;
     margin: 10px;
 }
 
-aside h1{
+.ok h1{
     text-align: center;
 }
 
 
 
 footer{
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: #0e0e0e;
     display: flex;
     text-align: center;
