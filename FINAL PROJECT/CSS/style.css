@@ -1,0 +1,460 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(45, 44, 44);
+    
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../IMG/cat-1285634_1280.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Optional: to make text more readable */
+    padding: 20px;
+    border-radius: 10px;
+    /* display: flex;  */
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.logo:hover{
+    color: #e91e63;
+    transition: all 1 ease;
+    font-size: 80px;
+}
+
+/* header and navigation bar here  */
+header{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight:bold;
+    color: #fefefe;
+}
+
+.logo:hover{
+    color: #e91e63;
+    transition: all 1s ease;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hamBurger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10ps 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a{
+    color: #11101b;
+    background-color: #fefefe;
+    padding: 5px;
+    text-decoration: none;
+    font-style:italic;
+}
+
+.nav-bar ul li a:hover{
+    cursor: pointer;
+    background-color: #e91e63;
+    color: white;
+    padding: 7px;
+    transition: all 0.5s ease;
+}
+
+
+.nav-bar ul li a.activate{
+    color: #11101b;
+    background-color: #fefefe;
+}
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .hamBurger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamBurger .line{
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+    }
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* transition: 0.5s; */
+}
+
+.card{
+    background-color: white;
+    width: 270px;
+    /* height: 400px; */
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    /* background-color: aqua; */
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.car-1{
+    background-image: url(../IMG/cat-1285634_1280.png);
+}
+
+.car-2{
+    background-image: url(../IMG/dog-8439530_1280.jpg);
+}
+
+.car-3{
+    background-image: url(../IMG/raccoon-750394_1280.jpg);
+}
+
+.card a{
+    background-color: black;
+    color: white;
+    padding:15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+
+
+body{
+    width: 100%;
+    color: #000;
+    font-family: "open sans";
+    position: relative;
+    background-color: #000; 
+}
+
+a{
+    text-decoration: none;
+    transition: .5s;
+    color: #fff;
+
+
+}
+
+ul, li{
+    list-style-type:none;
+
+}
+
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social ul {
+    display: flex;
+}
+
+.footer-section .social ul li {
+    margin-right: 10px;
+}
+
+.footer-section .social ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.footer-section .social ul li a:hover {
+    background-color: #fff;
+    color: rgb(34, 34, 34);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+
+/* contact page  */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-container button:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.thankyou-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.thankyou-container p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* about page css  */
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.card-0 {
+    background-color: white;
+    width: 45%;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    /* height: 500px; */
+}
+
+.card-image {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+
+.person-1 {
+    background-image: url('../IMG/acharya.png'); /* Replace with your image URL */
+}
+
+.person-2 {
+    background-image: url('../IMG/silwal.jpg'); /* Replace with your image URL */
+}
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 3 em;
+    color: #333;
+}
+
+.card-0 p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-0 button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.card-0 button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
